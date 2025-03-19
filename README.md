@@ -7,22 +7,39 @@ The names of realistic instances in folder TEST1-REALISTIC are "TEST1-X-Y" where
 Random and realistic instances (TEST0-RANDOM and TEST1-REALISTIC) are built in the same way: 
 
 int number of jobs
+
 int number of machines
+
 int number of workers
+
 int number of time slots
+
 matrix[][] 0/1 compatibiliy jobXmachine
+
 matrix[][] 0/1 compatibiliy jobXworker
+
 matrix[][] 0/1 compatibiliy machineXworker
+
 array[int] jobs’ release date (index of the time slot)
+
 array[int] jobs’ due date (index of the time slot)
+
 array[int] jobs’ workers load (unitary amount of workers’ load per time slot for each job)
+
 array[int] jobs’ weight
+
 array[int] jobs’ processing time (in number of time slots)
+
 matrix[][] int working hours availability workerXtimeslot (in units of worker load)
+
 int number of precedences i
+
 matrix[][2] precedences with job indices: matrix[i][0] i-th  predecessor  - matrix[i][1] i-th  successor (indices of the jobs)
+
 int number of contiguities j
+
 matrix[][2] contiguities with job indices: matrix[i][0] j-th  predecessor - matrix[i][1] j-th  successor  (indices of the jobs)
+
 
 
 
